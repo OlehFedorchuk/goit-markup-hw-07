@@ -13,6 +13,7 @@
 
 /* section logo */
 @media screen and (min-width: 480px) {
+
     .header-list {
         display: none;
     }
@@ -20,6 +21,10 @@
     .address-list {
         display: none;
     }
+
+    /* .navigation-list {
+        width: 480px;
+    } */
 
     .icon-menu-hamburger {
         margin-right: auto;
