@@ -79,6 +79,87 @@ body {
     min-width: 200px;
 }
 
+/* -----Mobile menu------ */
+.mob-container {
+    padding: 40px;
+    max-width: 428px;
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c3c3c3;
+
+}
+
+.menu-close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 16px;
+}
+
+.mob-menu-list {
+    list-style: var(--remove-marker-list);
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.mob-menu-tel {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40/36);
+    color: #4D5AE5;
+    margin-bottom: 40px;
+}
+
+.mob-menu-email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-bottom: 40px;
+}
+
+.mob-menu-link {}
+
+.link {}
+
+.mob-soc-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    list-style: var(--remove-marker-list);
+
+}
+
+.mob-soc-item {}
+
+.mob-soc-icon {
+    fill: #F4F4FD;
+}
+
+.mob-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ---------------------- */
+
 /*----------------Navigation----------------*/
 .header-list {
     font-size: 16px;
