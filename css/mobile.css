@@ -1,16 +1,3 @@
-/* body {
-    background-color: #c4c4c4;
-} */
-@media screen and (max-width: 1200px) {
-    .decoration-item {
-        display: none;
-    }
-
-    .our-works {
-        display: none;
-    }
-}
-
 /* section logo */
 @media screen and (min-width: 480px) {
 
@@ -22,17 +9,11 @@
         display: none;
     }
 
-    /* .navigation-list {
-        width: 480px;
-    } */
-
     .icon-menu-hamburger {
         margin-right: auto;
         fill: #2E2F42;
     }
-}
 
-@media screen and (max-width:480px) {
     .header-list {
         display: none;
     }
@@ -40,19 +21,27 @@
     .address-list {
         display: none;
     }
-}
 
-/* ---------- */
 
-/* section hero */
-@media screen and (min-width: 480px) {
+    /* section hero */
+
     .hero-title {
         width: 318px;
     }
 
+
+
+
     /* ---------------------------------- */
+
+    /* Section Team */
+
+    /* ------------ */
+
+
+
+
+
+
+
 }
-
-/* Section Team */
-
-/* ------------ */
