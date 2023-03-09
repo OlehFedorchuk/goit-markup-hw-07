@@ -1354,7 +1354,7 @@ img {
 }
 
 .mob-container {
-    padding: 40px;
+    padding: 24px 16px 40px 16px;
     max-width: 428px;
 }
 
