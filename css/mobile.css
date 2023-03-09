@@ -1,47 +1,34 @@
-/* section logo */
-@media screen and (min-width: 480px) {
+ @media screen and (max-width: 767px) {
+     .header-list {
+         display: none;
+     }
 
-    .header-list {
-        display: none;
-    }
+     .address-section {
+         display: none;
+     }
+ }
 
-    .address-list {
-        display: none;
-    }
+ @media screen and (max-width: 1199px) {
+     .decoration-item {
+         display: none;
+     }
 
-    .icon-menu-hamburger {
-        margin-right: auto;
-        fill: #2E2F42;
-    }
-
-    .header-list {
-        display: none;
-    }
-
-    .address-list {
-        display: none;
-    }
+     .our-works-container {
+         display: none;
+     }
+ }
 
 
-    /* section hero */
-
-    .hero-title {
-        width: 318px;
-    }
-
-
-
-
-    /* ---------------------------------- */
-
-    /* Section Team */
-
-    /* ------------ */
+ @media screen and (min-width: 428px) {
+     .container {
+         width: 428px;
+         margin-left: auto;
+         margin-right: auto;
+     }
 
 
 
 
 
 
-
-}
+ }
