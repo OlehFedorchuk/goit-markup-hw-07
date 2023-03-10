@@ -119,6 +119,10 @@
 
     }
 
+    .hero-container {
+        padding-bottom: 108px;
+    }
+
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -128,9 +132,10 @@
     }
 
     .hero-button {
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 40px;
+
 
     }
 
