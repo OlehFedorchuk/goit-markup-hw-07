@@ -1079,7 +1079,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 /*---------------Gallery--------------- */
-
+/* 
 .gallery-list {
     display: flex;
     flex-wrap: wrap;
@@ -1087,7 +1087,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     column-gap: 24px;
     justify-content: space-evenly;
     padding-bottom: 120px;
-}
+} */
 
 .gallery-title {
     font-weight: 500;

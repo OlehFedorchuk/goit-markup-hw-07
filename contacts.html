@@ -16,6 +16,9 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Document</title>
@@ -24,24 +27,28 @@
 <body>
     <header class="header">
 
-        <div class="container heder-container">
+        <div class="container header-container">
             <nav class="navigation-list">
 
                 <a href="./index.html" class="logo logo-header"><span class="accent">Web</span>Studio</a>
 
-
                 <ul class="header-list header-list-container">
-
-
-                    <li><a href="./index.html" class="header-list-link">Studio</a></li>
+                    <li><a href="./index.html" class="header-list-link current">Studio</a></li>
                     <li><a href="./portfolio.html" class="header-list-link">Portfolio</a></li>
-                    <li><a href="./contacts.html" class="header-list-link current">Contacts</a>
-                    </li>
-
+                    <li><a href="./contacts.html" class="header-list-link">Contacts</a></li>
                 </ul>
 
             </nav>
-            <address>
+
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+
+            </button>
+
+
+            <address class="address-section">
                 <ul class="address-list address-list-container">
 
                     <li>
@@ -53,15 +60,61 @@
 
 
                 </ul>
-
             </address>
 
         </div>
     </header>
+    <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+            <div>
+                <button type="button" data-menu-close class="menu-close">
+                    <svg class="modal-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-x"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item"><a href="#" class="mob-menu-link link"></a>Studio</li>
+                    <li class="mob-menu-item"><a href="#" class="mob-menu-link link"></a>Portfolio</li>
+                    <li class="mob-menu-item mob-menu-color"><a href="#" class="mob-menu-link link"></a>Contacts
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="mob-menu-tel"><a href="#" class="mob-menu-link link"></a>+11 (000) 111-11-11</li>
+                    <li class="mob-menu-email"><a href="#" class="mob-menu-link link"></a>info@devstudio.com</li>
 
+                </ul>
+                <ul class="mob-soc-list">
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                            <svg class="mob-soc-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                            <svg class="mob-soc-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                            <svg class="mob-soc-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                            <svg class="mob-soc-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
 
     <footer class="footer bg-color-footer">
-        <!-- --------------------------------------- -->
+
         <div class="container flex-container">
             <div class="container-logo footer-logo-container">
                 <a href="./index.html" class="logo logo-footer"><span class="accent">Web</span>Studio</a>
@@ -105,11 +158,9 @@
                 </ul>
 
             </div>
-            <div class="subscribe-form">
+            <div>
                 <p class="title-subscribe">Subscribe</p>
                 <div class="forma-subscribe">
-                    </class>
-
                     <input class="input-subscribe" type="email" placeholder="Email">
                     <button class="btn-style-subscribe" type="submit">
                         <span class="text-subscribe">Subscribe</span>
@@ -120,19 +171,66 @@
                 </div>
             </div>
         </div>
-        <!-- ------------------------------------------- -->
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop  is-hidden" data-modal>
         <div class="modal">
+
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-x"></use>
                 </svg>
             </button>
 
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+
+            <form class="modal-form">
+                <div class="input-wrap">
+                    <label class="label-title" for="user-name">Name</label>
+                    <input class="modal-input" type="text" name="user-name" id="user-name">
+                    <svg class="modal-icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+                <div class="input-wrap">
+                    <label class="label-title" for="user-tel">Phone</label>
+                    <input class="modal-input" id="user-tel" type="number" name="user-tel">
+                    <svg class="modal-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <div class="input-wrap">
+                    <label class="label-title" for="user-email">Email</label>
+                    <input class="modal-input" id="user-email" type="email" name="user-email">
+                    <svg class="modal-icon" width="15" height="12">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+
+                <div class="input-wrap input-wrap-textarea">
+                    <label class="label-title" for="user-text">Comment</label>
+                    <textarea class="textarea-text" id="user-text" placeholder="Text input"></textarea>
+
+                </div>
+
+
+                <div class="modal-field modal-field-policy">
+                    <input class="input-check" type="checkbox" id="policy" value="true">
+                    <label class="check-text" for="policy">
+                        I accept the terms and conditions of the <a href="#"> Privacy
+                            Policy</a>
+                    </label>
+                </div>
+            </form>
+
+            <button class="btn-modal" type="submit"><span class="btn-text-modal">Send</span></button>
+
+
+
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
