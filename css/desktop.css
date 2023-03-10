@@ -1,3 +1,8 @@
+:root {
+    --l-gradient: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7));
+}
+
 @media screen and (min-width: 1200px) {
     .menu-open {
         display: none;
@@ -21,6 +26,24 @@
         display: flex;
         gap: 40px;
     }
+
+    /* hero */
+
+    .section-hero {
+        background-image: var(--l-gradient), url(../images/bg-desktop.jpg);
+
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width:1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .section-hero {
+            background-image: url(../images/bg-desktop@2x.jpg);
+        }
+
+    }
+
+    /*  */
 
     .current::after {
         bottom: -28px;
@@ -52,6 +75,7 @@
     .features-text {
         width: 264px;
     }
+
 
     /* Our works */
     .our-works-container {

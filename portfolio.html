@@ -16,6 +16,10 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Document</title>
@@ -25,23 +29,28 @@
 
     <header class="header">
 
-        <div class="container heder-container">
+        <div class="container header-container">
             <nav class="navigation-list">
 
                 <a href="./index.html" class="logo logo-header"><span class="accent">Web</span>Studio</a>
 
-
                 <ul class="header-list header-list-container">
-
-
-                    <li><a href="./index.html" class="header-list-link">Studio</a></li>
-                    <li><a href="./portfolio.html" class="header-list-link current">Portfolio</a></li>
+                    <li><a href="./index.html" class="header-list-link current">Studio</a></li>
+                    <li><a href="./portfolio.html" class="header-list-link">Portfolio</a></li>
                     <li><a href="./contacts.html" class="header-list-link">Contacts</a></li>
-
                 </ul>
 
             </nav>
-            <address>
+
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+
+            </button>
+
+
+            <address class="address-section">
                 <ul class="address-list address-list-container">
 
                     <li>
@@ -53,7 +62,6 @@
 
 
                 </ul>
-
             </address>
 
         </div>
@@ -91,7 +99,8 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/payment.jpg" alt="Cashless payment" width="360" height="300">
+                                <img src="./images/cashless-payment-min.jpg" alt="Cashless payment" width="360"
+                                    height="300">
                                 <p class="gallery-cover-text">14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
                                     · Exotic Fruit Ecommerce App ·
@@ -108,7 +117,7 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/meditation.jpg" alt="Meditation app" width="360" height="300">
+                                <img src="./images/meditaion-min.jpg" alt="Meditation app" width="360" height="300">
                                 <p class="gallery-cover-text">14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
                                     · Exotic Fruit Ecommerce App ·
@@ -124,7 +133,7 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/taxi.jpg" alt="Taxi" width="360" height="300">
+                                <img src="./images/taxi-min.jpg" alt="Taxi" width="360" height="300">
                                 <p class="gallery-cover-text">14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
                                     · Exotic Fruit Ecommerce App ·
@@ -140,7 +149,7 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/screen.jpg" alt="Illumination on the screen" width="360"
+                                <img src="./images/screen-min.jpg" alt="Illumination on the screen" width="360"
                                     height="300">
                                 <p class="gallery-cover-text">14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
@@ -157,8 +166,8 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/online-courses.jpg" alt="Woman with phone and headphones" width="360"
-                                    height="300">
+                                <img src="./images/online-courses-min.jpg" alt="Woman with phone and headphones"
+                                    width="360" height="300">
                                 <p class="gallery-cover-text">14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
                                     · Exotic Fruit Ecommerce App ·
@@ -174,8 +183,8 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/instagram-stories.jpg" alt="Instagram stories concept" width="360"
-                                    height="300">
+                                <img src="./images/inatagram-stories-min.jpg" alt="Instagram stories concept"
+                                    width="360" height="300">
                                 <p class="gallery-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
@@ -193,7 +202,7 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/organic-food.jpg" alt="Fruit in bag" width="360" height="300">
+                                <img src="./images/organic-food-min.jpg" alt="Fruit in bag" width="360" height="300">
                                 <p class="gallery-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
@@ -210,7 +219,7 @@
                     <li class="gallery-item">
                         <div class="gallery-cover-wrap">
                             <a>
-                                <img src="./images/fresh-coffee.jpg" alt="Coffee in cup" width="360" height="300">
+                                <img src="./images/fresh-coffee-min.jpg" alt="Coffee in cup" width="360" height="300">
                                 <p class="gallery-cover-text">
                                     14 Stylish and User-Friendly App Design Concepts
                                     · Task Manager App · Calorie Tracker App
@@ -232,7 +241,7 @@
 
     </main>
     <footer class="footer bg-color-footer">
-        <!-- --------------------------------------- -->
+
         <div class="container flex-container">
             <div class="container-logo footer-logo-container">
                 <a href="./index.html" class="logo logo-footer"><span class="accent">Web</span>Studio</a>
@@ -276,11 +285,9 @@
                 </ul>
 
             </div>
-            <div class="subscribe-form">
+            <div>
                 <p class="title-subscribe">Subscribe</p>
                 <div class="forma-subscribe">
-                    </class>
-
                     <input class="input-subscribe" type="email" placeholder="Email">
                     <button class="btn-style-subscribe" type="submit">
                         <span class="text-subscribe">Subscribe</span>
@@ -291,7 +298,6 @@
                 </div>
             </div>
         </div>
-        <!-- ------------------------------------------- -->
     </footer>
 
 

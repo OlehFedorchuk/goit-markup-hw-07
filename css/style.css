@@ -102,7 +102,17 @@ body {
 }
 
 .section-hero {
+    background-image: var(--l-gradient), url(../images/bg-mobile.jpg);
     background-color: var(--main-page-color);
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .section-hero {
+        background-image: url(../images/bg-mobile@2x.jpg);
+    }
 
 }
 
