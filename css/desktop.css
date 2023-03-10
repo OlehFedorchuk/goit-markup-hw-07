@@ -136,10 +136,13 @@
     /* Footer */
     .flex-container {
         padding-left: 0px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .footer-logo-container {
         margin-right: 120px;
+        margin-bottom: 0px;
     }
 
     .soc-media-container {
