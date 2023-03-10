@@ -110,7 +110,7 @@
     screen and (min-resolution: 192dpi) and (min-width:768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
         .section-hero {
-            background-image: url(../images/bg-tablet@2x.jpg);
+            background-image: var(--l-gradient), url(../images/bg-tablet@2x.jpg);
         }
 
     }
