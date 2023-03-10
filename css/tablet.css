@@ -282,4 +282,20 @@
     }
 
     /*  */
+    /* Portfolio Page */
+    .btn-list-container {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 96px;
+        margin-bottom: 72px;
+
+
+    }
+
+
+
+    /*  */
+
 }

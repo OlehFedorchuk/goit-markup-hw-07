@@ -67,6 +67,18 @@
      .mob-soc-list {
          gap: 10px;
      }
+
+     .btn-list-container {
+         display: flex;
+         gap: 16px;
+         flex-wrap: wrap;
+         justify-content: start;
+         margin-top: 96px;
+         margin-bottom: 72px;
+
+
+     }
+
  }
 
  /*  */
