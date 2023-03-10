@@ -17,9 +17,15 @@
         width: 1128px;
     }
 
+    .header-container {
+        padding-bottom: 24px;
+    }
+
     .features-container {
         padding-left: 0px;
         padding-right: 0px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .address-list {
@@ -46,7 +52,7 @@
     /*  */
 
     .current::after {
-        bottom: -28px;
+        bottom: -27px;
     }
 
     .features-list {
@@ -56,7 +62,7 @@
 
     .features-item {
         width: 264px;
-        margin-bottom: 72px;
+        margin-bottom: 0px;
     }
 
     .decoration-item {
@@ -73,6 +79,7 @@
     }
 
     .features-text {
+        font-weight: 400;
         width: 264px;
     }
 
@@ -98,7 +105,7 @@
     .doing-list-container {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     .doing-title,
@@ -129,6 +136,11 @@
         width: 1128px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .customer-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     /*  */
