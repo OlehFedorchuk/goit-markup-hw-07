@@ -16,8 +16,12 @@
     }
 
     .hero-button {
-        margin-top: 48px;
+
         margin-bottom: 0px;
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
     }
 
     .container {

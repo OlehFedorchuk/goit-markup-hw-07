@@ -88,9 +88,7 @@ body {
     text-align: center;
 }
 
-.hero-button {
-    margin-top: 72px;
-}
+.hero-button {}
 
 .hero-text {
     font-family: 'Roboto', sans-serif;
@@ -127,6 +125,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     width: 318px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 72px;
 
 }
 
